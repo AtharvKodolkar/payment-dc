@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const upiLink = `upi://pay?pa=atharvkodolkar@okhdfcbank&pn=DYPCET%20Canteen&am=${total}&cu=INR`;
 
     // Optionally show UPI link before redirecting to WhatsApp
-    // window.open(upiLink, "_blank"); // Uncomment if you want to open UPI directly
+    window.open(upiLink, "_blank"); // Uncomment if you want to open UPI directly
 
     // Redirect to WhatsApp with message
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
